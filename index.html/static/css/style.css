@@ -1,31 +1,48 @@
-/* Reset */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Root Variables */
+/* Basic Styling */
 :root {
     --primary-color: #3498db; /* Blue */
     --secondary-color: #2ecc71; /* Green */
     --font-family: 'Arial', sans-serif;
     --heading-color: #333; /* Dark Grey */
     --body-color: #666; /* Lighter Grey */
-    --bg-color: #f5f5f5; /* Light Background */
-    --text-color: #333; /* Text Color */
+    --bg-color: #f0f4f8; /* Light Background */
 }
 
-/* Body styling */
+/* Body and text styles */
 body {
     font-family: var(--font-family);
-    background-color: var(--bg-color);
     color: var(--body-color);
+    background-color: var(--bg-color);
     line-height: 1.6;
-    padding: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
-/* Navigation styling */
+/* Heading Styles */
+h1, h2, h3 {
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+/* Anchor link styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Navigation Styling */
 nav {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -34,7 +51,6 @@ nav {
 
 .nav-links {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -45,105 +61,76 @@ nav {
 
 .nav-links a {
     color: white;
-    text-decoration: none;
     font-size: 1.2rem;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Blog post styling */
+/* Blog Post Styles */
 .blog-post {
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .blog-post header {
     text-align: center;
-    padding: 2rem;
-    background-color: white;
-    border: 2px solid var(--primary-color);
-    border-radius: 8px;
 }
 
 .blog-post img {
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
-    display: block;
+    margin: 1rem 0;
     border-radius: 10px;
 }
 
+/* Section styling */
 section {
     padding: 2rem;
-    background-color: #ffffff; /* White background for sections */
-    border: 2px solid #3498db; /* Blue border for the box effect */
+    background-color: #fff;
     margin-bottom: 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
 }
 
-/* Related Articles */
+/* Related Articles Styling */
 .related-articles ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
-.related-articles li {
-    margin-bottom: 1rem;
+.related-articles ul li {
+    margin: 0.5rem 0;
 }
 
-.related-articles a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.related-articles a:hover {
-    text-decoration: underline;
-}
-
-/* Subscribe Section */
-.subscribe {
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.subscribe h3 {
-    color: white;
-    margin-bottom: 1rem;
-}
-
+/* Subscribe form styling */
 .subscribe form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1rem;
 }
 
-.subscribe label {
-    color: white;
-}
-
-.subscribe input {
-    margin-bottom: 1rem;
+.subscribe input[type="email"] {
     padding: 0.5rem;
-    width: 100%;
-    max-width: 400px;
-    border: 2px solid #fff;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
+    flex: 1;
 }
 
 .subscribe button {
-    background-color: #fff;
-    color: var(--secondary-color);
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .subscribe button:hover {
-    background-color: #ecf0f1;
+    background-color: var(--secondary-color);
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
@@ -154,12 +141,28 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
     .nav-links li {
         display: block;
         margin-bottom: 1rem;
     }
 
+    .blog-post {
+        padding: 1rem;
+    }
+
     .subscribe form {
+        flex-direction: column;
+    }
+
+    .subscribe input, .subscribe button {
         width: 100%;
     }
 }
