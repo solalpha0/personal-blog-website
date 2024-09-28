@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Daily Walking</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog-post.html">Blog Post</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post">
+        <header>
+            <h1>Benefits of Daily Walking</h1>
+            <p class="date">Published on September 25, 2024</p>
+        </header>
+
+        <section>
+            <h2>Why Walking is Important</h2>
+            <p>Walking is a simple but effective form of exercise that can be easily incorporated into your daily routine. It's accessible to people of all ages and fitness levels, making it one of the best ways to stay healthy without needing specialized equipment.</p>
+            <img src="static/images/walking.jpg" alt="Person walking outdoors for health benefits">
+        </section>
+
+        <section>
+            <h2>Physical Health Benefits</h2>
+            <p>Walking regularly helps reduce the risk of heart disease, strengthens bones, improves circulation, and can even help lower your cholesterol levels. It's a low-impact activity that's gentle on your joints while offering significant cardiovascular benefits.</p>
+        </section>
+
+        <section>
+            <h2>Mental Health Benefits</h2>
+            <p>Not only does walking boost your physical health, but it also has tremendous mental health benefits. Walking outdoors can reduce stress, improve your mood, and enhance overall well-being. Taking time out to walk is a great way to practice mindfulness.</p>
+        </section>
+
+        <footer>
+            <a href="index.html" class="back-home">Back to Home</a>
+        </footer>
+    </article>
+
+</body>
+</html>
