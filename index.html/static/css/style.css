@@ -1,56 +1,40 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic Styling */
-:root {
-    --primary-color: #3498db; /* Blue */
-    --secondary-color: #2ecc71; /* Green */
-    --font-family: 'Arial', sans-serif;
-    --heading-color: #333; /* Dark Grey */
-    --body-color: #666; /* Lighter Grey */
-    --bg-color: #f0f4f8; /* Light Background */
-}
-
-/* Body and text styles */
+/* General Page Styling */
 body {
-    font-family: var(--font-family);
-    color: var(--body-color);
-    background-color: var(--bg-color);
-    line-height: 1.6;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
+    padding: 0;
 }
 
-/* Heading Styles */
 h1, h2, h3 {
-    color: var(--heading-color);
-    margin-bottom: 1rem;
+    color: #333;
 }
 
-/* Anchor link styles */
+p {
+    line-height: 1.6;
+}
+
 a {
-    color: var(--primary-color);
+    color: #3498db;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: #2ecc71;
     text-decoration: underline;
 }
 
 /* Navigation Styling */
 nav {
-    background-color: var(--primary-color);
+    background-color: #3498db;
     padding: 1rem;
     text-align: center;
 }
 
 .nav-links {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -64,89 +48,124 @@ nav {
     font-size: 1.2rem;
 }
 
-/* Blog Post Styles */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Post and Content Styling */
 .blog-post {
-    margin: 2rem auto;
     max-width: 800px;
+    margin: 2rem auto;
     padding: 2rem;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post header {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .blog-post img {
     max-width: 100%;
     height: auto;
     margin: 1rem 0;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-/* Section styling */
+.blog-post section {
+    margin-bottom: 2rem;
+}
+
+.blog-post .date {
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a.back-home {
+    font-size: 1.2rem;
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a.back-home:hover {
+    text-decoration: underline;
+}
+
+/* Additional Styling for Sections */
 section {
     padding: 2rem;
-    background-color: #fff;
+    background-color: #ffffff;
+    border: 2px solid #3498db;
     margin-bottom: 2rem;
-    border: 2px solid var(--primary-color);
     border-radius: 10px;
 }
 
-/* Related Articles Styling */
-.related-articles ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.related-articles ul li {
-    margin: 0.5rem 0;
-}
-
-/* Subscribe form styling */
-.subscribe form {
+/* Flexbox and Grid (For Layout Improvements) */
+.container {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-.subscribe input[type="email"] {
-    padding: 0.5rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
+.container div {
     flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.subscribe button {
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: white;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+form input[type="email"] {
+    width: calc(100% - 100px);
+    padding: 1rem;
+    margin: 0;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
-.subscribe button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    color: white;
-    margin-top: 2rem;
+form input[type="submit"]:hover {
+    background-color: #2980b9;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        padding: 0 1rem;
-    }
-
-    nav {
-        padding: 1rem;
+    .container {
+        flex-direction: column;
     }
 
     .nav-links li {
@@ -156,13 +175,5 @@ footer {
 
     .blog-post {
         padding: 1rem;
-    }
-
-    .subscribe form {
-        flex-direction: column;
-    }
-
-    .subscribe input, .subscribe button {
-        width: 100%;
     }
 }
