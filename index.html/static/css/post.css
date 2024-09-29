@@ -1,0 +1,31 @@
+/* Blog Post Specific Styling */
+.author-section {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.author-section img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.author-info h4, .author-info p {
+    margin: 0;
+}
+
+.social-share {
+    margin-top: 1rem;
+}
+
+.social-share a {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.social-share img {
+    width: 30px;
+    height: 30px;
+}
