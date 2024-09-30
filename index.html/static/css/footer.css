@@ -1,11 +1,39 @@
-/* Footer Styling */
-.footer-links {
-    background-color: #3498db;
-    color: white;
-    padding: 1rem;
+/* footer.css */
+
+/* Footer container */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
     text-align: center;
+    margin-top: 3rem;
+    border-top: 5px solid #3498db;
 }
 
-.footer-links p {
-    margin: 0;
+/* Footer links styling */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social media icons */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-socials img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-socials img:hover {
+    opacity: 0.7;
 }
