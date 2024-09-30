@@ -14,7 +14,7 @@ body {
     color: #333;
     line-height: 1.6;
     font-size: 16px; /* Added base font size */
-    padding: 0;
+    padding: 0 15px; /* Add padding to avoid edge-clipping on smaller screens */
     margin: 0;
 }
 
@@ -58,6 +58,9 @@ a:hover {
     max-width: 1200px; /* Prevent content from stretching too much on larger screens */
     margin: 0 auto;
     padding: 0 15px;  /* Padding added for extra spacing */
+    background-color: white; /* Ensure content has a clean background */
+    border-radius: 10px; /* Softened container edges */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
 }
 
 /* Navigation Styling */
@@ -65,17 +68,21 @@ nav {
     background-color: #3498db;
     padding: 1rem;
     text-align: center;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Centered content */
+    align-items: center;
 }
 
 .nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Flexbox for even spacing */
+    justify-content: space-around;
+    width: 100%; /* Ensure links are spaced across the nav bar */
 }
 
 .nav-links li {
     display: inline-block;
-    margin-right: 1rem;
+    margin: 0 15px; /* Consistent margin between buttons */
 }
 
 .nav-links a {
@@ -100,4 +107,30 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow for depth */
+}
+
+/* Container Adjustments for Spacing */
+.container {
+    padding: 20px; /* Added padding to the container for spacing */
+    margin-bottom: 2rem; /* Additional margin to provide space between sections */
+}
+
+/* Box Styling */
+.box {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Flexbox Layout Fix */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+}
+
+.flex-item {
+    flex-basis: 48%; /* Adjust width of flex items for better alignment */
+    margin-bottom: 20px;
 }
