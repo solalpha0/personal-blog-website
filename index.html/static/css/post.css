@@ -1,31 +1,151 @@
-/* Blog Post Specific Styling */
+/* post.css */
+
+/* Styling for the individual blog post container */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog post header */
+.blog-post header {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.blog-post header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post header p.date {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Section styles */
+.blog-post section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
+
+/* Section headings */
+.blog-post section h2 {
+    color: #2980b9;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post section p {
+    color: #34495e;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Blog images */
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+/* Author section styling */
 .author-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border: 2px solid #3498db;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    margin: 2rem 0;
 }
 
 .author-section img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-right: 20px;
+    margin-right: 1.5rem;
 }
 
-.author-info h4, .author-info p {
+.author-section .author-info {
+    color: #2c3e50;
+}
+
+.author-section .author-info h3 {
     margin: 0;
+    font-size: 1.6rem;
+    color: #2980b9;
 }
 
-.social-share {
-    margin-top: 1rem;
+.author-section .author-info p {
+    margin: 0.3rem 0;
+    color: #34495e;
 }
 
-.social-share a {
+/* Social sharing icons */
+.social-sharing {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-sharing a {
+    margin: 0 0.5rem;
     display: inline-block;
-    margin-right: 1rem;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
 }
 
-.social-share img {
-    width: 30px;
-    height: 30px;
+.social-sharing a:hover {
+    background-color: #2980b9;
+}
+
+.social-sharing a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Subscribe section */
+.subscribe {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.subscribe input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.subscribe button {
+    padding: 0.5rem 1rem;
+    background-color: #2980b9;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.subscribe button:hover {
+    background-color: #2c3e50;
 }
