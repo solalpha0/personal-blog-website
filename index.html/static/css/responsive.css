@@ -1,0 +1,38 @@
+/* Mobile ResponsHere is the continuation of your **responsive.css** and **footer.css** files:
+
+---
+
+### 7. **responsive.css**
+```css
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-bottom: 1rem;
+    }
+
+    .blog-post {
+        padding: 1.5rem;
+    }
+
+    .author-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-section img {
+        margin-bottom: 1rem;
+    }
+
+    .social-share a {
+        margin-right: 0.5rem;
+    }
+
+    .social-share img {
+        width: 25px;
+        height: 25px;
+    }
+}

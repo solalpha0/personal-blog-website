@@ -1,0 +1,24 @@
+/* Home Page Layout */
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.subscribe form input,
+.subscribe form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.subscribe form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe form button:hover {
+    background-color: #2980b9;
+}
