@@ -13,6 +13,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    font-size: 16px; /* Added base font size */
 }
 
 /* General Heading Styles */
@@ -20,6 +21,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     font-weight: bold;
     color: #222;
+}
+
+/* Specific heading sizes for more differentiation */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.5rem;
 }
 
 /* Link Styling */
@@ -35,6 +53,7 @@ a:hover {
 /* Global Container */
 .container {
     width: 90%;
+    max-width: 1200px; /* Added max-width to prevent container from stretching too much on larger screens */
     margin: 0 auto;
 }
 
