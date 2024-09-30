@@ -1,38 +1,172 @@
-/* Mobile ResponsHere is the continuation of your **responsive.css** and **footer.css** files:
+/* responsive.css */
 
----
-
-### 7. **responsive.css**
-```css
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+/* Mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    /* General body adjustments for small screens */
+    body {
+        font-size: 14px;
+        padding: 1rem;
     }
 
-    .nav-links li {
-        margin-bottom: 1rem;
+    /* Navigation */
+    nav ul.nav-links {
+        display: block;
+        text-align: center;
+        padding: 0;
     }
 
-    .blog-post {
-        padding: 1.5rem;
+    nav ul.nav-links li {
+        display: block;
+        margin-bottom: 10px;
     }
 
+    /* Blog Post article */
+    article.blog-post {
+        padding: 1rem;
+    }
+
+    article.blog-post img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Author Section */
     .author-section {
-        flex-direction: column;
+        display: block;
         text-align: center;
     }
 
     .author-section img {
-        margin-bottom: 1rem;
+        width: 100px;
+        height: auto;
+        margin: 1rem 0;
     }
 
-    .social-share a {
-        margin-right: 0.5rem;
+    .author-info h3 {
+        font-size: 1.5rem;
     }
 
-    .social-share img {
+    /* Social sharing for mobile */
+    .social-sharing {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-sharing img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-socials img {
         width: 25px;
         height: 25px;
+    }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Navigation */
+    nav ul.nav-links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    /* Blog Post article */
+    article.blog-post {
+        padding: 2rem;
+    }
+
+    /* Author Section */
+    .author-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author-section img {
+        width: 120px;
+        margin-right: 1rem;
+    }
+
+    /* Social sharing */
+    .social-sharing img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-socials img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media (min-width: 1025px) {
+    /* Navigation */
+    nav ul.nav-links {
+        justify-content: flex-start;
+    }
+
+    nav ul.nav-links li {
+        margin-right: 1.5rem;
+    }
+
+    /* Blog Post article */
+    article.blog-post {
+        padding: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Author Section */
+    .author-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .author-section img {
+        width: 150px;
+        margin-right: 2rem;
+    }
+
+    /* Social sharing */
+    .social-sharing img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-socials img {
+        width: 35px;
+        height: 35px;
     }
 }
