@@ -10,10 +10,12 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ecf0f1;  /* Updated background color for a more subtle effect */
     color: #333;
     line-height: 1.6;
     font-size: 16px; /* Added base font size */
+    padding: 0;
+    margin: 0;
 }
 
 /* General Heading Styles */
@@ -53,8 +55,41 @@ a:hover {
 /* Global Container */
 .container {
     width: 90%;
-    max-width: 1200px; /* Added max-width to prevent container from stretching too much on larger screens */
+    max-width: 1200px; /* Prevent content from stretching too much on larger screens */
     margin: 0 auto;
+    padding: 0 15px;  /* Padding added for extra spacing */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #3498db;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    background-color: #2980b9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    background-color: #1abc9c;
+    border: 1px solid #fff;
 }
 
 /* Common Section Styling */
@@ -64,4 +99,5 @@ section {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow for depth */
 }
