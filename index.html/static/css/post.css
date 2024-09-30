@@ -152,8 +152,16 @@
     background-color: #2c3e50;
 }
 
-/* Optional responsive adjustment for social icons */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
+    .blog-post section p {
+        font-size: 1.1rem; /* Larger text for readability */
+    }
+
+    .blog-post section {
+        padding: 1.5rem; /* Increase padding slightly for mobile */
+    }
+
     .social-sharing a {
         width: 30px;
         height: 30px;
@@ -164,10 +172,8 @@
         width: 15px;
         height: 15px;
     }
-}
 
-/* Optional responsive adjustment for the author section */
-@media (max-width: 600px) {
+    /* Responsive adjustment for the author section */
     .author-section {
         flex-direction: column;
         text-align: center;
@@ -179,5 +185,16 @@
 
     .author-section .author-info {
         text-align: center;
+    }
+}
+
+/* Optional responsive adjustment for larger screens */
+@media (min-width: 1200px) {
+    .blog-post {
+        max-width: 1000px; /* Widening for larger displays */
+    }
+
+    .blog-post section {
+        padding: 2.5rem; /* Adding more padding for readability */
     }
 }
