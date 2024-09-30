@@ -68,6 +68,9 @@ nav {
     background-color: #3498db;
     padding: 1rem;
     text-align: center;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center navigation links */
+    align-items: center;
 }
 
 .nav-links {
@@ -92,6 +95,7 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease; /* Add smooth transition */
 }
 
 .nav-links a:hover {
@@ -107,12 +111,6 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow for depth */
-}
-
-/* Container Adjustments for Spacing */
-.container {
-    padding: 20px; /* Added padding to the container for spacing */
-    margin-bottom: 2rem; /* Additional margin to provide space between sections */
 }
 
 /* Box Styling */
@@ -133,4 +131,33 @@ section {
 .flex-item {
     flex-basis: 48%; /* Adjust width of flex items for better alignment */
     margin-bottom: 20px;
+}
+
+/* New Additions */
+
+/* Improved Box Borders and Padding for Consistent Layout */
+.section-box {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visual separation */
+}
+
+/* Flexbox Styling for Consistent Item Alignment */
+.flex-item {
+    flex-basis: 48%; /* Adjust width of flex items for better alignment */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Column layout for consistency */
+}
+
+/* Grid for Larger Displays */
+@media (min-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+        gap: 20px;
+    }
 }
