@@ -31,7 +31,7 @@
 /* Section styles */
 .blog-post section {
     margin-bottom: 2rem;
-    padding: 1.5rem; /* Increased padding for better spacing */
+    padding: 1.5rem;
     background-color: #ecf0f1;
     border-left: 5px solid #3498db;
     border-radius: 5px;
@@ -47,7 +47,7 @@
     color: #34495e;
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 750px; /* Added max-width for improved readability */
+    max-width: 750px;
 }
 
 /* Blog images */
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Wrap form elements for smaller screens */
 }
 
 .subscribe input[type="email"] {
@@ -79,6 +80,7 @@
     border-radius: 5px;
     border: none;
     width: 250px;
+    margin-bottom: 1rem; /* Space between input and button */
 }
 
 .subscribe button {
@@ -110,7 +112,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .related-articles ul li {
@@ -132,29 +134,38 @@
 /* Responsive adjustment for smaller screens */
 @media (max-width: 600px) {
     .blog-post {
-        padding: 1rem; /* Reduce padding on smaller devices */
+        padding: 1rem;
     }
 
     .blog-post header h1 {
-        font-size: 2rem; /* Reduce header size for smaller devices */
+        font-size: 2rem;
     }
 
     .subscribe {
-        padding: 1.5rem; /* Reduce padding for better spacing on small screens */
+        padding: 1.5rem;
+    }
+
+    .subscribe input[type="email"] {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0 0 1rem 0;
     }
 
     .related-articles ul {
-        flex-direction: column; /* Stack related articles vertically */
+        flex-direction: column;
     }
 }
 
 /* Larger screens */
 @media (min-width: 1200px) {
     .blog-post {
-        max-width: 1000px; /* Widen for large displays */
+        max-width: 1000px;
     }
 
     .blog-post section {
-        padding: 2.5rem; /* Increase padding for more spacious layout */
+        padding: 2.5rem;
+    }
+
+    .related-articles {
+        padding: 2rem; /* Add more spacing on larger screens */
     }
 }
