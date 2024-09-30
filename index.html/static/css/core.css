@@ -1,20 +1,48 @@
-/* Text Formatting */
-p b {
+/* core.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* General Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
     font-weight: bold;
+    color: #222;
 }
 
-p em {
-    font-style: italic;
+/* Link Styling */
+a {
+    color: #3498db;
+    text-decoration: none;
 }
 
-p u {
+a:hover {
     text-decoration: underline;
 }
 
-blockquote {
-    font-style: italic;
-    color: #666;
-    border-left: 5px solid #ccc;
-    margin-left: 1.5rem;
-    padding-left: 1rem;
+/* Global Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Common Section Styling */
+section {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
